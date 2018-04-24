@@ -1,6 +1,8 @@
 #include <MCP3208.h>
 #include <SPI.h>
 
+//////////
+
 MCP3208 adc(D8);
 
 int latchPin = D3; // 12 ST_CP storage resister clock input
