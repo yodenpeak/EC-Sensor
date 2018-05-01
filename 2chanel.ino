@@ -64,8 +64,8 @@ void loop() {
   t = rtc.getTime();
   while(t.date == 0){}
   getdata();
-  //if(t.min%15 == 0 && t.sec%20 == 0)  
-  if(t.sec%5 == 0)
+  if(t.min%15 == 0 && t.sec%20 == 0)  
+  //if(t.sec%5 == 0)
   {
     clockdate();
     GetEC();          //Calls Code to Go into GetEC() Loop [Below Main Loop] dont call this more that 1/5 hhz [once every five seconds] or you will polarise the water
